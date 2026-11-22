@@ -1,20 +1,21 @@
 .my-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 64px;
-  padding: 20px;
-  background-color: transparent;
-  z-index: 100;
-  &.scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
+  position: sticky;
+  top: 16px;
+  z-index: 1000;
+
+  background-color: #fafafa;
+  border-radius: 24px;
+  padding: 32px;
+  margin: 32px;
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
