@@ -1,0 +1,114 @@
+.miss{
+  padding-top: 90px;
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 542px;
+  }
+  &__title{
+    color: var(--Dark-Gray, #232321);
+    font-family: var(--font-1);
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%; /* 70.3px */
+    text-transform: uppercase;
+  }
+  &__button{
+    display: flex;
+    height: 48px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: flex-end;
+    border-radius: 8px;
+    background: var(--Blue, #4A69E2);
+    color: var(--White, #FFF);
+    font-family:var(--font-1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background: var(--Blue, #344fbd);
+    }
+}
+  &__products{
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  &__product{
+  }
+  &__image{
+    border: 8px solid #fff;
+    border-radius: 28px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  &__text{
+    color: var(--Dark-Gray, #232321);
+
+    /* Rubik/24px */
+    font-family: var(--font-1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 16px   ;
+  }
+  &__view{
+    display: flex;
+    height: 48px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--Dark-Gray, #232321);
+    color: var(--Pure-White, #FFF);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background: #344fbd;
+    }
+    span{
+      color: var(--Yellow, #FFA52F);
+      font-family: Rubik;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.25px;
+      text-transform: uppercase;
+    }
+  }
+  &__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 12px 16px;
+    background-color: #4A69E2;
+    border-radius: 24px 0;
+    color: var(--White, #FFF);
+
+    /* Rubik/12px */
+    font-family: var(--font-1);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
