@@ -41,14 +41,29 @@
     display: flex;
     gap: 16px;
     margin-top: 32px;
-  }
+    }
+
   &__product{
+    transition: transform 0.3s ease;
+    &:hover{
+    transform: translateY(-4px);
+    }
   }
   &__image{
     border: 8px solid #fff;
     border-radius: 28px;
     margin-bottom: 16px;
     position: relative;
+    aspect-ratio: 0.90 / 1;
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
   }
   &__text{
     color: var(--Dark-Gray, #232321);
@@ -83,6 +98,7 @@
     &:hover{
       background: #344fbd;
     }
+    margin-bottom: 128px;
     span{
       color: var(--Yellow, #FFA52F);
       font-family: Rubik;

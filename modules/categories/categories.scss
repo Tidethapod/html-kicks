@@ -1,0 +1,106 @@
+.categories{
+  background: var(--Dark-Gray, #232321);
+  &__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+  }
+  &__title{
+    color: var(--White, #FFF);
+    font-family: Rubik;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 95%; /* 70.3px */
+    text-transform: uppercase;
+  }
+  &__slide{
+    display: flex;
+    align-self: flex-end;
+    gap: 16px;
+  }
+  &__arrowleft{
+    border-radius: 8px;
+    background: var(--Gray, #E7E7E3);
+    border: none;
+    padding: 8px 12px;
+    transition: opacity 0.3s ease;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &__arrowright{
+    border-radius: 8px;
+    background: var(--Gray, #E7E7E3);
+    border: none;
+    padding: 8px 12px;
+
+    transition: opacity 0.3s ease;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &__spotlight{
+    margin-top: 64px;
+    display: flex;
+    border-radius: 64px 0 0 0;
+    overflow: hidden;
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+  &__item{
+    background: #ECEEF0;
+    position: relative;
+    flex: 1;
+    height: 600px;
+    padding: 30px 48px;
+    &:last-of-type{
+      background: #F6F6F6;
+    }
+  }
+  &__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__body{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: flex-start;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  &__name{
+    color: var(--Dark-Gray, #232321);
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__link{
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    background: var(--Dark-Gray, #232321);
+    transition: background 0.3s ease;
+    &:hover{
+      background-color: #0056b3;
+    }
+  }
+}
